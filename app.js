@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/contact',isAuthenticated, (req, res) => {
+app.get('/contact', (req, res) => {
     res.render('contact',{
         layout: 'layouts/main-layout',
     });
